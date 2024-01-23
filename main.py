@@ -101,7 +101,7 @@ def menu(callback):
         file_path = "./logo.PNG"
         with open(file_path, "rb") as file:
             # Отправляем фото с подписью и клавиатурой
-            bot.send_photo(callback.message.chat.id, file, reply_markup=markup)
+            bot.send_photo(callback.message.chat.id, "https://ibb.co/QpQQd1Z", reply_markup=markup)
     except Exception as e:
         print(f"Error sending photo: {e}")
 
